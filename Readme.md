@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алиса Холмогорова](https://up.htmlacademy.ru/adaptive/16/user/376285).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082)
 
 ---
 
