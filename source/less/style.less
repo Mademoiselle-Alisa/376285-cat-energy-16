@@ -1,0 +1,438 @@
+@import "fonts";
+@import "normalize.less";
+
+
+
+body {
+  background-color: ffffff;
+  color: #111111;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+
+
+  width: 320px;
+  box-sizing: border-box;
+  padding: 11px 20px 14px;
+
+  background-color: #fff;
+  xolor: #222;
+
+
+}
+
+.page-header__logo {
+  margin: 0;
+  padding: 0;
+
+  width: 191px;
+    height: 39px;
+}
+
+.main-navigation__toggle {
+  border: none;
+  box-shadow: none;
+
+  position: relative;
+
+  width: 24px;
+  height: 2px;
+
+  background-color: #222;
+      vertical-align: sub;
+      padding: 0;
+
+  &::before {
+  content:'';
+
+  width: 24px;
+  height: 2px;
+
+  background-color: #222;
+
+  position: absolute;
+
+  top: -8px;
+
+  left: 0;
+
+
+
+
+  }
+
+   &::after {
+  content:'';
+
+  width: 24px;
+  height: 2px;
+
+  background-color: #222;
+
+  position: absolute;
+
+  top: 8px;
+
+  left: 0;
+
+
+  }
+
+
+}
+
+.main-navigation__list.site-list {
+  display: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+.start-page {
+  width: 320px;
+
+}
+
+
+.promo {
+
+  background: #fff url(../img/index-background-mobile@1x.jpg) 0 0 no-repeat;
+
+  padding: 26px 20px;
+    text-align: center;
+
+}
+
+.promo__heading {
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1;
+
+  color: #fff;
+
+  padding: 0;
+      margin: 0 0 25px;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  text-transform: uppercase;
+
+
+  color: #fff;
+
+  margin: 0 0 27px;
+
+}
+
+.standart-btn {
+  color: #fff;
+  background-color: #68b738;
+
+  border: none;
+  box-shadow: none;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  display: inline-block;
+box-sizing: border-box;
+
+}
+
+.promo__btn {
+  width: 280px;
+  height: 40px;
+
+      padding: 12px 0;
+
+    font-size: 14px;
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+.programs {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.programs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.programs__item {
+      padding: 27px 20px;
+  margin: 0;
+  background-color: #f2f2f2;
+      margin-bottom: 15px;
+}
+
+.programs__heading {
+font-size: 24px;
+    line-height: 1.64;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-weight: 200;
+    position: relative;
+
+
+    padding-left: 70px;
+        margin-bottom: 29px;
+
+}
+
+
+.programs__icon{
+
+  width: 50px;
+  height: 51px;
+  background-color: #68b738;
+  border-radius: 50%;
+
+
+
+      position: absolute;
+          top: -5px;
+    left: 2px;
+
+}
+
+.programs__icon--slim::after  {
+
+    width: 45px;
+    height: 50px;
+    display: inline-block;
+    background-image: url(../img/icon-cat-slim.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+        top: -2px;
+    left: 3px;
+
+
+
+    content:'';
+
+}
+
+.programs__icon--pro::after  {
+
+    width: 67px;
+    height: 28px;
+    display: inline-block;
+    background-image: url(../img/icon-cat-pro.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+     top: 12px;
+    left: -9px;
+
+
+
+    content:'';
+
+}
+
+
+.programs__description {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+
+  padding-bottom: 23px;
+  border-bottom: 1px solid #f2f2f2;
+     margin-bottom: 16px;
+  }
+
+.programs__link {
+  font-size: 16px;
+  line-height: 1;
+text-transform: uppercase;
+color: #111;
+
+text-decoration: none;
+
+position: relative;
+    padding-right: 35px;
+}
+
+
+.programs__link::after {
+  content: '';
+position: absolute;
+top: 6px;
+    right: 0;
+
+width: 25px;
+    height: 12px;
+
+background-image: url(../img/icon-right-arrow-long.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+.how-it-works {
+  padding: 0 20px;
+}
+
+.how-it-works__heading {
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+
+  padding: 0;
+      margin: 0 0 30px;
+}
+
+.how-it-works__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.how-it-works__item {
+  margin: 0 0 20px;
+  padding: 0;
+
+  display: flex;
+}
+
+.how-it-works__icon {
+ width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  flex-wrap: nowrap;
+
+
+
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+
+  position: relative;
+
+}
+
+
+.how-it-works__icon--leaf::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-leaf@1x.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.how-it-works__icon--chemistry::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-powder@1x.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.how-it-works__icon--cutlery::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-dining@1x.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.how-it-works__icon--weighing-machine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-clock@1x.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.how-it-works__description {
+   width: 200px;
+
+
+  flex-wrap: nowrap;
+
+margin: 0;
+  padding: 0;
+
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #444444;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+.live-example {
+  background-color: #f2f2f2;
+      padding: 20px 20px;
+}
+
+.live-example__heading {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.67;
+  color: #111;
+      margin: 0 0 20px;
+    padding: 0;
+}
+
+.live-example__description {
+margin: 0 0 20px;
+    padding: 0;
+font-family: Arial;
+  font-size: 14px;
+  line-height: 1.29;
+}
