@@ -1,0 +1,54 @@
+.page-header {
+  .white-bg;
+  .black-two-text;
+  display: flex;
+
+  box-sizing: border-box;
+  padding: 11px 20px 14px;
+
+  justify-content: space-between;
+}
+
+.main-navigation__toggle {
+  position: relative;
+
+  width: 24px;
+  height: 2px;
+  padding: 0;
+
+  vertical-align: sub;
+
+  border: none;
+  background-color: #222;
+  box-shadow: none;
+
+  &::before {
+    position: absolute;
+    top: -8px;
+    left: 0;
+
+    width: 24px;
+    height: 2px;
+
+    content: '';
+
+    background-color: #222;
+  }
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    width: 24px;
+    height: 2px;
+
+    content: '';
+
+    background-color: #222;
+  }
+}
+
+.main-navigation__list.site-list {
+  display: none;
+}
