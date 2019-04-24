@@ -2,15 +2,20 @@
 @import "normalize.less";
 @import "mixins.less";
 
-@import "contacts.less";
-@import "header.less";
-@import "how-it-works.less";
-@import "live-example.less";
-@import "main-footer.less";
-@import "programs.less";
-@import "promo.less";
-@import "social-links.less";
-@import "standart-btn.less";
+@import "blocks/contacts.less";
+@import "blocks/catalog.less";
+@import "blocks/catalog-extra.less";
+@import "blocks/catalog_general.less";
+@import "blocks/catalog-show-more.less";
+@import "blocks/header.less";
+@import "blocks/how-it-works.less";
+@import "blocks/live-example.less";
+@import "blocks/main-footer.less";
+@import "blocks/present.less";
+@import "blocks/programs.less";
+@import "blocks/promo.less";
+@import "blocks/social-links.less";
+@import "blocks/standart-btn.less";
 
 
 .visually-hidden {
@@ -28,4 +33,65 @@ body {
   .white-bg;
   .black-two-text;
   font-family: 'Oswald', 'Arial', sans-serif;
+}
+
+.form__heading {
+  .black-two-text;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.67;
+
+  margin: 15px 0 25px;
+  padding: 0 20px;
+}
+
+.form__explanation {
+  .black-two-text;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+
+  margin: 0 0;
+  padding: 0 30px 0 20px;
+
+}
+
+.form {
+  .zero;
+  padding: 0 20px;
+}
+
+.form__fieldset {
+  .zero;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.form__fieldset p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form__label {
+  flex-wrap: nowrap;
+
+  font-size: 16px;
+  line-height: 1.13;
+
+  text-transform: uppercase;
+  margin-right: 15px;
+
+}
+
+.form__input {
+  .grey-text;
+  flex-grow: 1;
+
+  padding: 15px 16px;
+  border: solid 1px #cdcdcd;
+
+  font-size: 16px;
+  line-height: 1.13;
+  text-transform: uppercase;
 }
