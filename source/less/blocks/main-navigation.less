@@ -16,7 +16,7 @@
     height: 2px;
     padding: 0;
 
-    background-color: #222;
+    background-color: @black;
 
     &::before {
       position: absolute;
@@ -26,9 +26,9 @@
       width: 24px;
       height: 2px;
 
-      content: '';
+      content: "";
 
-      background-color: #222;
+      background-color: @black;
     }
 
     &::after {
@@ -39,9 +39,9 @@
       width: 24px;
       height: 2px;
 
-      content: '';
+      content: "";
 
-      background-color: #222;
+      background-color: @black;
     }
   }
 
@@ -62,8 +62,6 @@
   }
 }
 
-
-
 .main-navigation__list.site-list {
   .zero;
   list-style: none;
@@ -78,11 +76,10 @@
   text-transform: uppercase;
 
   padding: 22px 0;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid @grey-two;
 
   a {
     color: @black-two;
     text-decoration: none;
   }
-
 }
