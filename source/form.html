@@ -8,11 +8,13 @@
   <body>
     <h1 class="visually-hidden">Cat Energy - подбор программы</h1>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="/img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy. На изображении радостный бело-рыжий кот на фоне желтого круга. Рядом подпись Cat Energy">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy. На изображении радостный бело-рыжий кот на фоне желтого круга. Рядом подпись Cat   Energy">
+        </a>
+        <button class="main-navigation__toggle main-navigation__toggle--open" type="button"><span></span></button>
+      </div>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button"></button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item site-list__item--active"><a href="catalog.html">Каталог продукции</a></li>
@@ -26,16 +28,16 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__fieldset">
           <p>
-            <label class="form__label">Имя:*</label>
-            <input class="form__input" type="text" value="Барсик">
+            <label class="form__label" for="pet-name">Имя:*</label>
+            <input class="form__input" type="text" value="Барсик" id="pet-name">
           </p>
           <p>
-            <label class="form__label">Вес(кг):*</label>
-            <input class="form__input" type="text" value="7">
+            <label class="form__label" for="pet-weight">Вес(кг):*</label>
+            <input class="form__input" type="text" value="7" id="pet-weight">
           </p>
           <p>
-            <label class="form__label">Возраст(лет):</label>
-            <input class="form__input" type="text" value="7">
+            <label class="form__label" for="pet-age">Возраст(лет):</label>
+            <input class="form__input" type="text" value="7" id="pet-age">
           </p>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--all-bordered">
@@ -55,18 +57,18 @@
         <fieldset class="form__fieldset">
           <div class="form__fieldset__heading-wrapper"><h3 class="form__fieldset__heading">Контактные данные (владельца кота)</h3></div>
           <p>
-            <label class="form__label">E-mail:*</label>
-            <input class="form__input" type="text" value="kuklachev@gmail.com">
+            <label class="form__label" for="owner-email">E-mail:*</label>
+            <input class="form__input" type="text" value="kuklachev@gmail.com" id="owner-email">
           </p>
           <p>
-            <label class="form__label">Телефон:*</label>
-            <input class="form__input" type="text" value="8 (960) 900-60-90">
+            <label class="form__label" for="owner-tel">Телефон:*</label>
+            <input class="form__input" type="text" value="8 (960) 900-60-90" id="owner-tel">
           </p>
         </fieldset>
         <fieldset class="form__fieldset">
           <div class="form__fieldset__heading-wrapper"><h3 class="form__fieldset__heading">Комментарий</h3></div>
           <p>
-            <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" id="owner-comment"></textarea>
           </p>
         </fieldset>
         <fieldset class="form__fieldset">
@@ -98,12 +100,12 @@
           <span class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
         </div>
         <div class="contacts__map">
-          <img src="/img/bg-map-mobile@1x.png" width="320" height="400" alt="мы на карте">
+          <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="мы на карте">
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo"><img src="/img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy усеченный"></a>
+      <a class="main-footer__logo"><img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy усеченный"></a>
       <ul class="main-footer__list social-links">
         <li class="social-links__item">
           <a class="social-links__link social-links__link--vk" href="#">
@@ -142,7 +144,7 @@
       </ul>
       <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
         <span>HTML Academy</span>
-        <img src="/img/htmlacademy.svg" width="27" height="34" alt="Логотип Html Academy">
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип Html Academy">
       </a>
     </footer>
   </body>
