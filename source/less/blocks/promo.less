@@ -1,7 +1,11 @@
 .promo {
   padding: 26px 20px;
   text-align: center;
-  background: @white url("../img/index-background-mobile@1x.jpg") 0 0 no-repeat;
+  background-image: linear-gradient(to top,#fff 40%,transparent 40%),url(../img/index-background-mobile@1x.jpg);
+  background-size: auto, 320px auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom,center top;
+  background-color: #63a73a;
 }
 
 .promo__heading {
@@ -20,9 +24,14 @@
   text-transform: uppercase;
 }
 
+.promo__image {
+  margin: 0 auto;
+  display: block;
+}
+
 .promo__btn {
   font-size: 14px;
-  width: 280px;
+  width: 100%;
   height: 40px;
   padding: 12px 0;
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,9 +13,9 @@
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy. На изображении радостный бело-рыжий кот на фоне желтого круга. Рядом подпись Cat   Energy">
         </a>
-        <button class="main-navigation__toggle main-navigation__toggle--open" type="button"><span></span></button>
       </div>
       <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button"><span></span></button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item site-list__item--active"><a href="catalog.html">Каталог продукции</a></li>
@@ -22,10 +23,10 @@
         </ul>
       </nav>
     </header>
-    <main class="form-page">
-      <h2 class="form__heading">Подбор программы</h2>
-      <p class="form__explanation">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <main>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="form__heading">Подбор программы</h2>
+        <p class="form__explanation">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <fieldset class="form__fieldset">
           <p>
             <label class="form__label" for="pet-name">Имя:*</label>
@@ -100,7 +101,7 @@
           <span class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
         </div>
         <div class="contacts__map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="мы на карте">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d840.3218389205184!2d30.322599929744523!3d59.9382248130593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1556973270849!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
     </main>
@@ -147,5 +148,6 @@
         <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип Html Academy">
       </a>
     </footer>
+    <script src="js/main-nav-btn.js"></script>
   </body>
 </html>

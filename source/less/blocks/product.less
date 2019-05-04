@@ -1,25 +1,17 @@
-.catalog__list {
-  .zero;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.catalog__item.product {
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px 22px;
-  border-bottom: 1px solid #d9d9d9;
-}
-
 .product__wrapper {
   .zero;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.product__photo {
+  width: 50%;
 }
 
 .product__description {
   flex-grow: 1;
+  width: 50%;
 }
 
 .product__name {
@@ -60,7 +52,7 @@
 }
 
 .product__order-btn {
-  width: 280px;
+  width: 100%;
   height: 40px;
   padding: 11px 20px;
 }

@@ -1,6 +1,4 @@
-.catalog__item.show-more {
-  text-align: center;
-  border-bottom: 1px solid #d9d9d9;
+.show-more {
   margin: 0 0 25px 0;
 }
 
@@ -21,7 +19,7 @@
     content: "";
     position: absolute;
     top: 25%;
-    right: 320px / 2 - 15.5px;
+    right: calc(50% - 15.5px);
 
     width: 31px;
     height: 31px;
@@ -44,17 +42,18 @@
   background-color: @white-two;
   color: @grey;
 
-  width: 280px;
+  width: 100%;
   height: 40px;
   display: inline-block;
   box-sizing: border-box;
 
   padding: 10px 20px;
-  margin: 0 0 25px 0;
+  margin: 0 0 25px;
 
   font-size: 16px;
   line-height: 1.25;
   vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 }

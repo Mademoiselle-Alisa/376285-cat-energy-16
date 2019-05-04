@@ -53,21 +53,23 @@
     top: 13px;
     left: 100%;
     display: inline-block;
-    width: 175px;
+    width: 2000%;
     height: 3px;
     content: "";
     vertical-align: middle;
   }
 }
 
-.form__fieldset p {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  align-items: center;
+.form__fieldset {
+  p {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
 
-  &:not(:last-child) {
-    margin: 0 0 13px;
+    &:not(:last-child) {
+      margin: 0 0 13px;
+    }
   }
 }
 
@@ -164,7 +166,7 @@
   display: none;
 }
 
-.form__checkbox:checked ~ .form__label--checkbox::after {
+.form__checkbox:checked + .form__label--checkbox::after {
   display: block;
 }
 
@@ -187,7 +189,7 @@
 
 .form__submit {
   display: block;
-  width: 280px;
+  width: calc(100% - 40px);
   height: 40px;
   margin: 0 auto;
   padding: 11px 20px;
