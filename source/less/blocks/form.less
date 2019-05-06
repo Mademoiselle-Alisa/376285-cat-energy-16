@@ -1,5 +1,5 @@
 .form__heading {
-  color: @black-two;
+  color: @black;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
@@ -8,7 +8,7 @@
 }
 
 .form__explanation {
-  color: @black-two;
+  color: @black;
   font-size: 14px;
   line-height: 1.29;
   margin: 0 0 40px;
@@ -38,7 +38,7 @@
 }
 
 .form__fieldset--all-bordered {
-  border: 1px solid @grey-two;
+  border: 1px solid @grey;
   padding: 23px 20px;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .form__fieldset__heading {
-  color: @black-two;
+  color: @black;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -80,7 +80,7 @@
 }
 
 .form__input {
-  color: @grey;
+  color: @grey-dark;
   font-size: 16px;
   font-style: inherit;
   line-height: 1.13;
@@ -98,7 +98,7 @@
   padding: 10px 0 0 50px;
 
   &::before {
-    border: 1px solid @grey-two;
+    border: 1px solid @grey;
     position: absolute;
     top: 3px;
     left: 4px;
@@ -126,7 +126,7 @@
   display: none;
 }
 
-.form__radio:checked ~ .form__label--radio::after {
+.form__radio:checked + .form__label--radio::after {
   display: block;
 }
 
@@ -135,7 +135,7 @@
   padding: 10px 0 0 50px;
 
   &::before {
-    border: 1px solid @grey-two;
+    border: 1px solid @grey;
     position: absolute;
     top: 3px;
     left: 4px;
@@ -169,8 +169,8 @@
 }
 
 .form__textarea {
-  border: 1px solid @grey-two;
-  color: @grey;
+  border: 1px solid @grey;
+  color: @grey-dark;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.13;
@@ -194,7 +194,7 @@
 }
 
 .form__note {
-  color: @grey;
+  color: @grey-dark;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
