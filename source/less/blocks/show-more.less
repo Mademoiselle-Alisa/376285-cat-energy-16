@@ -1,0 +1,59 @@
+.show-more {
+  margin: 0 0 25px 0;
+}
+
+.show-more__heading {
+  color: @black;
+
+  margin: 0 auto 10px;
+  padding: 80px 0 0 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: calc(50% - 15.5px);
+
+    width: 31px;
+    height: 31px;
+
+    background: url("../../img/icon-plus.svg") 0 0 no-repeat;
+  }
+}
+
+.show-more__paragraph {
+  color: @grey-dark;
+
+  margin: 0 auto 20px;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.show-more__button {
+  background-color: @grey-light;
+  color: @grey-dark;
+
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  box-sizing: border-box;
+
+  padding: 10px 20px;
+  margin: 0 0 25px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}

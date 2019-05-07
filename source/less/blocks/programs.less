@@ -1,0 +1,136 @@
+.programs {
+  .zero;
+}
+
+.programs__wrapper {
+  .content-area;
+  padding: 0 20px;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.programs__item {
+  background-color: @grey-light;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 27px 20px 21px;
+}
+
+.programs__heading {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 1.64;
+
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  padding-left: 70px;
+
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+
+.programs__icon {
+  background-color: @leaf-green;
+
+  position: absolute;
+  top: -5px;
+  left: 2px;
+
+  width: 50px;
+  height: 51px;
+
+  border-radius: 50%;
+}
+
+.programs__icon--slim {
+  &::after {
+    position: absolute;
+    top: -2px;
+    left: 3px;
+
+    display: inline-block;
+
+    width: 45px;
+    height: 50px;
+
+    content: "";
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.programs__icon--pro {
+  &::after {
+    position: absolute;
+    top: 12px;
+    left: -9px;
+
+    display: inline-block;
+
+    width: 67px;
+    height: 28px;
+
+    content: "";
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.programs__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programs__link {
+  color: @black;
+
+  font-size: 16px;
+  line-height: 1;
+
+  position: relative;
+
+  padding-right: 35px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    width: 25px;
+    height: 12px;
+
+    content: "";
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
