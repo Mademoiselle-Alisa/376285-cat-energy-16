@@ -92,6 +92,7 @@
 
 .programs__description {
   font-family: "Arial", sans-serif;
+  color: @grey-dark;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -132,5 +133,77 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center center;
+  }
+}
+
+@media(min-width: 768px) {
+  .programs__wrapper {
+    .content-area--tablet;
+    padding: 0 30px;
+  }
+
+  .programs__item {
+    padding: 76px 53px 58px;
+    margin-bottom: 30px;
+    min-height: 372px;
+    box-sizing: border-box;
+  }
+
+  .programs__heading {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.03;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  .programs__icon {
+    width: 200px;
+    height: 200px;
+    left: auto;
+    right: 10px;
+    top: 16px;
+  }
+
+  .programs__icon--slim {
+    &::after {
+      width: 140px;
+      height: 194px;
+      top: -12px;
+      left: 30px;
+    }
+  }
+
+  .programs__icon--pro {
+    &::after {
+      width: 268px;
+      height: 112px;
+      top: 43px;
+      left: -35px;
+    }
+  }
+
+  .programs__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 375px;
+    padding-bottom: 40px;
+    border: none;
+
+    &--pro {
+      width: 340px;
+    }
+  }
+
+  .programs__link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    padding-right: 45px;
+
+    &::after {
+      top: 10px;
+    }
   }
 }
