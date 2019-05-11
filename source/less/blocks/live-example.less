@@ -78,3 +78,66 @@
   text-transform: uppercase;
   align-self: center;
 }
+
+@media(min-width: 768px) {
+  .live-example {
+    background-color: @white;
+  }
+
+  .live-example__wrapper {
+    .content-area--tablet;
+    padding: 20px 30px;
+  }
+
+  .live-example__heading {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 64px;
+  }
+
+  .live-example__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 53px;
+  }
+
+  .live-example__cards {
+    justify-content: flex-start;
+  }
+
+  .live-example__item {
+    width: 162px;
+    margin: 0 42px 0 0;
+  }
+
+  .live-example__indicator {
+    padding: 14px 10px 19px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.23;
+    box-sizing: border-box;
+    height: 73px;
+  }
+
+  .live-example__addition {
+    background-color: @white;
+    margin: -9px 0 0 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    width: 130px;
+  }
+
+  .live-example__cost {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: right;
+    width: 175px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
