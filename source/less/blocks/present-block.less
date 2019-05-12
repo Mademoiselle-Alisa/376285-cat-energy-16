@@ -32,3 +32,29 @@
     background: url("../../img/icon-gift.svg") 0 0 no-repeat;
   }
 }
+
+@media(min-width: 768px) {
+  .present-block {
+    .content-area--tablet;
+    background: transparent  url("../img/gift-photo-tablet@1x.jpg") 50% 50% no-repeat;
+    background-size: auto;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 30px;
+    margin-bottom: 73px;
+  }
+
+  .present-block__description {
+    text-align: left;
+    margin: 0 0 0 0;
+    padding: 75px 116px 69px;
+
+    &::before {
+      right: auto;
+      left: -54%;
+      top: calc(47% - 30.5px);
+    }
+
+  }
+}

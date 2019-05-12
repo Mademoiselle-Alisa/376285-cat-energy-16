@@ -39,3 +39,45 @@
   height: 40px;
   padding: 11px 20px;
 }
+
+@media(min-width: 768px) {
+
+  .extra-product__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .extra-product__name {
+
+    a {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1;
+      margin: 0;
+    }
+  }
+
+  .extra-product__description {
+    margin: 0;
+    align-items: center;
+    width: 300px;
+  }
+
+  .extra-product__size {
+    width: 206px;
+    text-align: right;
+  }
+
+  .extra-product__size,
+  .extra-product__cost {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+
+  .extra-product__order-btn {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
