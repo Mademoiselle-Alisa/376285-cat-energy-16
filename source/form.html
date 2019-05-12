@@ -27,7 +27,7 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <div class="form__wrapper">
           <h2 class="form__heading">Подбор программы</h2>
-          <p class="form__explanation">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <p class="form__explanation">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
           <fieldset class="form__fieldset">
             <p>
               <label class="form__label" for="pet-name">Имя:*</label>
@@ -75,22 +75,24 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <h3 class="form__heading form__heading--small form__heading--green-line">Дополнительно</h3>
-            <p>
-              <input class="form__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
-              <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
-            </p>
-            <p>
-              <input class="form__checkbox" type="checkbox" id="water" name="water">
-              <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
-            </p>
-            <p>
-              <input class="form__checkbox" type="checkbox" id="milk" name="milk">
-              <label class="form__label form__label--checkbox" for="milk">Молоко</label>
-            </p>
-            <p>
-              <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
-              <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
-            </p>
+            <div class="form__wrapper--checkbox">
+              <p>
+                <input class="form__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
+                <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
+              </p>
+              <p>
+                <input class="form__checkbox" type="checkbox" id="water" name="water">
+                <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
+              </p>
+              <p>
+                <input class="form__checkbox" type="checkbox" id="milk" name="milk">
+                <label class="form__label form__label--checkbox" for="milk">Молоко</label>
+              </p>
+              <p>
+                <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
+                <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
+              </p>
+            </div>
           </fieldset>
           <button class="form__submit standart-btn" type="submit">Отправить заявку</button>
           <p class="form__note">* &mdash; Обязательные поля</p>
