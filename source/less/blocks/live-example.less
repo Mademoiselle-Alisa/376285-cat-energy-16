@@ -81,7 +81,8 @@
 
 @media(min-width: 768px) {
   .live-example {
-    background-color: @white;
+    background-image: linear-gradient(to top,#f2f2f2 40%,  @white 40%);
+    background-color: transparent;
   }
 
   .live-example__wrapper {
@@ -139,5 +140,57 @@
     width: 175px;
     margin: 0;
     margin-left: auto;
+  }
+}
+
+@media (min-width: 1220px) {
+  .live-example {
+    background-image: linear-gradient(to top,#f2f2f2 77%,  @white 77%);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .live-example__wrapper {
+    .content-area--desktop;
+    padding: 0 0 24px;
+  }
+
+  .live-example__heading {
+    margin-bottom: 66px;
+  }
+
+  .live-example__wrapper--inside {
+    width: 439px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .live-example__description {
+    margin-bottom: 68px;
+    margin-top: 80px;
+  }
+
+  .live-example__addition {
+    background-color: #f2f2f2;
+  }
+
+  .live-example__cost {
+    width: 328px;
+    margin: 50px 0 0 0;
+
+    display: flex;
+    flex-direction: row;
+
+    span {
+      margin-left: auto;
+    }
+  }
+
+  .live-example__slider {
+    width: 650px;
+    margin-left: 127px;
+    margin-top: -180px;
+    display: inline-block;
+    vertical-align: top;
   }
 }

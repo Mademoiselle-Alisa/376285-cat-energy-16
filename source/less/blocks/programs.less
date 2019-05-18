@@ -212,3 +212,64 @@
     }
   }
 }
+
+@media (min-width: 1220px) {
+  .programs__wrapper {
+    .content-area--desktop;
+    padding: 0;
+    margin-bottom: 73px;
+  }
+
+  .programs__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .programs__item {
+    width: calc((50% - 40px));
+    margin-right: 80px;
+    margin-bottom: 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .programs__heading {
+    padding-left: 160px;
+    margin-bottom: 72px;
+  }
+
+  .programs__icon {
+    width: 100px;
+    height: 100px;
+    top: -31px;
+    left: 0px;
+    right: auto;
+  }
+
+  .programs__icon--slim {
+    &::after {
+    top: -2px;
+    left: 3px;
+    width: 90px;
+    height: 96px;
+    }
+  }
+
+  .programs__icon--pro {
+    &::after {
+      width: 134px;
+      height: 57px;
+      top: 23px;
+      left: -19px;
+    }
+  }
+
+  .programs__description {
+    width: 465px;
+    padding-bottom: 17px;
+  }
+}

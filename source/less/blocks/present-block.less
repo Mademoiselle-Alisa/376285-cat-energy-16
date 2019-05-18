@@ -35,13 +35,13 @@
 
 @media(min-width: 768px) {
   .present-block {
-    .content-area--tablet;
+    width: 100%;
     background: transparent  url("../img/gift-photo-tablet@1x.jpg") 50% 50% no-repeat;
     background-size: auto;
     min-height: 200px;
     display: flex;
     flex-direction: row-reverse;
-    padding: 0 30px;
+    padding: 0;
     margin-bottom: 73px;
   }
 
@@ -55,6 +55,28 @@
       left: -54%;
       top: calc(47% - 30.5px);
     }
+  }
+}
 
+@media (min-width: 1220px) {
+  .present-block {
+    width: 245px;
+    display: inline-block;
+    vertical-align: top;
+
+    margin-left: 75px;
+
+    background: transparent  url("../img/gift-photo-desktop@1x.jpg") 50% 50% no-repeat;
+  }
+
+  .present-block__description {
+    padding: 187px 40px 45px 40px;
+    text-align: center;
+
+    &::before {
+      right: auto;
+      left: calc(50% - 28px);
+      top: 65px;
+    }
   }
 }
