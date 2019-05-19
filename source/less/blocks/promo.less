@@ -52,8 +52,9 @@
 
   .promo__wrapper {
     .content-area--tablet;
+    position: relative;
     text-align: left;
-    padding: 0 30px;
+    padding: 0 30px 545px;
   }
 
   .promo__heading {
@@ -63,6 +64,8 @@
     font-size: 60px;
     line-height: 1;
     text-align: left;
+    position: relative;
+    z-index: 2;
   }
 
   .promo__slogan {
@@ -72,6 +75,8 @@
     text-align: left;
     font-size: 20px;
     line-height: 1;
+    position: relative;
+    z-index: 2;
   }
 
   .promo__image {
@@ -85,27 +90,27 @@
 
   .promo__btn {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     margin: 0 0 0 88px;
     width: auto;
   }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1300px) {
   .promo {
     min-height: 676px;
     padding-top: 202px;
     margin-bottom: 80px;
     background-color: @white;
-    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, @white 50%, #65a93c 50%, #65a93c 70%, transparent 70%);
-    background-size: auto 100%, auto;
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, @white 50%, #65a93c 50%);
+    background-size: auto, auto;
     background-repeat: no-repeat, no-repeat;
-    background-position: right top, 0 0;
+    background-position: 100% 100%, 0 0;
   }
 
   .promo__wrapper {
     .content-area--desktop;
-    padding: 0;
+    padding: 0 40px 140px;
   }
 
   .promo__heading {
@@ -117,8 +122,8 @@
   }
 
   .promo__image {
-    bottom: 55px;
-    left: 42.2%;
+    top: -75px;
+    left: 487px;
     width: 522px;
     height: 499px;
     transform: none;

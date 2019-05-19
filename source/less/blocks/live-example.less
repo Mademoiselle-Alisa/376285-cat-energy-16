@@ -4,6 +4,7 @@
 
 .live-example__wrapper {
   .content-area;
+  box-sizing: border-box;
   padding: 20px 20px;
 }
 
@@ -79,6 +80,10 @@
   align-self: center;
 }
 
+.live-example__slider {
+  overflow: hidden;
+}
+
 @media (min-width: 768px) {
   .live-example {
     background-image: linear-gradient(to top, #f2f2f2 40%, @white 40%);
@@ -97,15 +102,26 @@
     margin-bottom: 64px;
   }
 
+  .live-example__inside-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 45px;
+  }
+
   .live-example__description {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 53px;
+    width: 100%;
   }
 
   .live-example__cards {
     justify-content: flex-start;
+    width: 420px;
+    margin-bottom: 0;
   }
 
   .live-example__item {
@@ -143,7 +159,7 @@
   }
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1300px) {
   .live-example {
     background-image: linear-gradient(to top, #f2f2f2 77%, @white 77%);
     background-repeat: no-repeat;
@@ -152,17 +168,18 @@
 
   .live-example__wrapper {
     .content-area--desktop;
-    padding: 0 0 24px;
+    padding: 0 40px 24px;
   }
 
   .live-example__heading {
     margin-bottom: 66px;
   }
 
-  .live-example__wrapper--inside {
+  .live-example__inside-wrapper {
     width: 439px;
     display: inline-block;
     vertical-align: top;
+    padding: 0;
   }
 
   .live-example__description {

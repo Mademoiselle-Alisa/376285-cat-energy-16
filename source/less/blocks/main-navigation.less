@@ -76,8 +76,9 @@
   display: none;
 }
 
-.main-navigation__list.site-list.list-show {
-  display: inherit;
+.main-navigation__list.list-show {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -90,7 +91,8 @@
     display: none;
   }
 
-  .main-navigation__list {
+  .main-navigation__list,
+  .main-navigation__list.list-show {
     display: flex;
     flex-direction: row;
     min-width: 440px;
