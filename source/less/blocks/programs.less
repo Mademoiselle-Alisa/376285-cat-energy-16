@@ -40,6 +40,8 @@
 
   vertical-align: middle;
   text-transform: uppercase;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 
@@ -148,10 +150,11 @@
   }
 
   .programs__item {
-    padding: 76px 53px 58px;
+    padding: 76px 280px 58px 53px;
     margin-bottom: 30px;
     min-height: 372px;
     box-sizing: border-box;
+    position: relative;
   }
 
   .programs__heading {
@@ -160,14 +163,15 @@
     line-height: 1.03;
     padding: 0;
     margin-bottom: 25px;
+    position: static;
   }
 
   .programs__icon {
     width: 200px;
     height: 200px;
     left: auto;
-    right: 10px;
-    top: 16px;
+    right: 62px;
+    top: 92px;
   }
 
   .programs__icon--slim {
@@ -192,7 +196,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    width: 375px;
     padding-bottom: 40px;
     border: none;
 
@@ -231,6 +234,7 @@
     width: calc((50% - 40px));
     margin-right: 80px;
     margin-bottom: 0;
+    padding: 62px 53px;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -240,6 +244,7 @@
   .programs__heading {
     padding-left: 160px;
     margin-bottom: 72px;
+    position: relative;
   }
 
   .programs__icon {
