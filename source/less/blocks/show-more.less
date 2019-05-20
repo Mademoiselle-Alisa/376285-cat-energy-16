@@ -57,3 +57,38 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .show-more {
+    background: @white;
+    margin: 0 0 51px;
+    padding: 40px 38px;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+  }
+
+  .show-more__heading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+
+    max-width: 150px;
+    margin: 0 auto 28px;
+    padding: 120px 0 0 0;
+
+    &::before {
+      top: 15px;
+      right: calc(50% - 30.5px);
+      width: 61px;
+      height: 61px;
+    }
+  }
+
+  .show-more__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0 15px 85px;
+  }
+}

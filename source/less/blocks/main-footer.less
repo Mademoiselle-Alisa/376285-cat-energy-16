@@ -25,12 +25,50 @@
 
   justify-content: space-between;
   align-items: center;
+
+  span {
+    color: @grey-dark;
+
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  svg {
+    width: 42px;
+    height: 44px;
+    vertical-align: middle;
+    fill: #666666;
+  }
 }
 
-.main-footer__copyright-link span {
-  color: @grey-dark;
+@media (min-width: 768px) {
+  .main-footer__wrapper {
+    .content-area--tablet;
+    padding: 40px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1;
+  .main-footer__logo {
+    .zero;
+    width: 25%;
+  }
+
+  .main-footer__copyright-link {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main-footer__wrapper {
+    .content-area--desktop;
+    padding: 46px 40px;
+  }
+
+  .main-footer__copyright-link {
+    width: 13%;
+    margin-left: auto;
+  }
 }

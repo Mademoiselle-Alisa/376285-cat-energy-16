@@ -76,6 +76,25 @@
   display: none;
 }
 
-.main-navigation__list.site-list.list-show {
-  display: inherit;
+.main-navigation__list.list-show {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .main-navigation {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__list,
+  .main-navigation__list.list-show {
+    display: flex;
+    flex-direction: row;
+    min-width: 440px;
+  }
 }
