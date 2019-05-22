@@ -8,6 +8,13 @@
   min-height: 289px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .present-block {
+    background: transparent  url("../img/gift-photo-mobile@2x.jpg") 50% 50% no-repeat;
+    background-size: cover;
+  }
+}
+
 .present-block__description {
   .zero;
 
@@ -58,6 +65,14 @@
   }
 }
 
+@media (min-resolution: 144dpi) and (min-width: 768px),
+  (min-resolution: 1.5dppx) and (min-width: 768px) {
+  .present-block {
+    background: transparent  url("../img/gift-photo-tablet@2x.jpg") 50% 50% no-repeat;
+    background-size: 708px auto;
+  }
+}
+
 @media (min-width: 1300px) {
   .present-block {
     width: 245px;
@@ -78,5 +93,13 @@
       left: calc(50% - 28px);
       top: 65px;
     }
+  }
+}
+
+@media (min-resolution: 144dpi) and (min-width: 1300px),
+  (min-resolution: 1.5dppx) and (min-width: 1300px) {
+  .present-block {
+    background: transparent  url("../img/gift-photo-desktop@2x.jpg") 50% 50% no-repeat;
+    background-size: 245px auto;
   }
 }

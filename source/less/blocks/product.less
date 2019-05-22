@@ -64,7 +64,13 @@
   }
 
   .product__photo {
+    width: 100%;
     align-self: center;
+
+    img {
+      width: 324px;
+      height: auto;
+    }
   }
 
   .product__description {
@@ -104,5 +110,17 @@
   .product__order-btn {
     width: auto;
     margin: 10px 38px 40px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .product__photo {
+    width: 100%;
+    align-self: center;
+
+    img {
+      width: 245px;
+      height: auto;
+    }
   }
 }
