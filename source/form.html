@@ -11,7 +11,12 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy. На изображении радостный бело-рыжий кот на фоне желтого круга. Рядом подпись Cat   Energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-header__logo-img" src="img/logo-mobile.svg"  width="191" height="39" alt="Логотип Cat Energy. На изображении радостный бело-рыжий кот на фоне желтого круга. Рядом подпись Cat   Energy">
+          </picture>
+        </a>
         </a>
         <nav class="main-navigation">
           <button class="main-navigation__toggle" type="button"><span>Меню</span></button>
