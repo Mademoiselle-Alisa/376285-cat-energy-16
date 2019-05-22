@@ -64,6 +64,7 @@
     background-image: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 50px 50px;
   }
 }
 
@@ -81,6 +82,7 @@
     background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 50px 50px;
   }
 }
 
@@ -98,6 +100,7 @@
     background-image: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 50px 50px;
   }
 }
 
@@ -115,6 +118,7 @@
     background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 50px 50px;
   }
 }
 
@@ -129,6 +133,33 @@
   padding: 0;
 
   flex-wrap: nowrap;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+  .how-it-works__icon--leaf {
+    &::after {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+  }
+
+  .how-it-works__icon--chemistry {
+    &::after {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+  }
+
+  .how-it-works__icon--cutlery {
+    &::after {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+  }
+
+  .how-it-works__icon--weighing-machine {
+    &::after {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -147,6 +178,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    counter-reset: list;
   }
 
   .how-it-works__item {
@@ -157,6 +190,20 @@
     min-height: 235px;
     padding-top: 32px;
     margin: 0 60px 80px 0;
+    position: relative;
+    list-style-type: none;
+    counter-increment: list;
+
+    &::after {
+      content: counter(list);
+      position: absolute;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+      top: -7px;
+      right: 79px;
+      z-index: -1;
+    }
 
     &:nth-of-type(even) {
       margin-right: 0;
@@ -196,6 +243,10 @@
     width: 245px;
     margin-right: 80px;
     margin-bottom: 0;
+
+    &::after {
+      right: -4px;
+    }
 
     &:nth-of-type(even) {
       margin-right: 80px;
