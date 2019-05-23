@@ -1,33 +1,64 @@
+.slider-cat__photo {
+  margin: 0 0 30px;
+
+  img {
+    width: 320px;
+    max-width: 320px;
+    height: 240px;
+  }
+}
+
 .slider-cat__wrapper {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 205px;
+  margin: 0 auto 20px;
 }
 
-.slider-cat__radio {
-  display: none;
-}
-
-.slider-cat__label {
+.slider-cat__btn {
   color: @black;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  padding: 0;
+
+  &--before {
+    padding: 0 0 0 6px;
+  }
+
+  &--after {
+    padding: 0 2px 0 0;
+  }
 }
 
-.slider-cat__toggle {
+.slider-cat__controls {
+  position: relative;
+}
+
+.slider-cat__scale {
   display: inline-block;
   box-sizing: border-box;
-  margin: 0 18px;
+  margin: 0;
   width: 84px;
   height: 14px;
   border: 1px solid #cdcdcd;
   background-color: @white;
   border-radius: 6px;
   position: relative;
+}
 
-  &::after {
+.slider-cat__range-toggle {
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 5px;
+    left: 6px;
     content: "";
     width: 35px;
     height: 6px;
@@ -38,18 +69,56 @@
     cursor: pointer;
     pointer-events: auto;
   }
-}
-
-#boris-after:checked + .slider-cat__toggle::after {
-  left: 43px;
-}
 
 @media(min-width: 768px) {
   .slider-cat {
-
     img {
       width: 690px;
       height: auto;
+    }
+  }
+
+  .slider-cat__btn {
+    font-size: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .slider-cat__scale {
+    padding: 0;
+    margin: 0 22px 5px;
+    width: 428px;
+    height: 6px;
+    border: 0;
+    background-color: #dcdcdc;
+  }
+
+  .slider-cat__range-toggle {
+    position: absolute;
+    left: 46.5%;
+    top: -10px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    outline: 0;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #68b738;
     }
   }
 }
