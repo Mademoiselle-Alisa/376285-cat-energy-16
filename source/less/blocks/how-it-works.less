@@ -177,7 +177,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    margin-bottom: 25px;
     counter-reset: list;
   }
 
@@ -188,7 +188,7 @@
     flex-shrink: 1;
     min-height: 235px;
     padding-top: 32px;
-    margin: 0 60px 80px 0;
+    margin: 0 58px 82px 0;
     position: relative;
     list-style-type: none;
     counter-increment: list;
@@ -207,12 +207,19 @@
     &:nth-of-type(even) {
       margin-right: 0;
     }
+
+    &:first-of-type {
+      &::after {
+        right: 96px;
+      }
+    }
   }
 
   .how-it-works__description {
     width: 245px;
     font-size: 16px;
     line-height: 1.5;
+    padding: 0;
   }
 
   .how-it-works__icon {
@@ -244,7 +251,7 @@
     margin-bottom: 0;
 
     &::after {
-      right: -4px;
+      right: -2px;
     }
 
     &:nth-of-type(even) {
@@ -253,6 +260,12 @@
 
     &:nth-of-type(4n) {
       margin-right: 0;
+    }
+
+    &:first-of-type {
+      &::after {
+        right: 16px;
+      }
     }
   }
 }

@@ -197,7 +197,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     border: none;
 
     &--pro {
@@ -235,7 +235,7 @@
     width: calc((50% - 40px));
     margin-right: 80px;
     margin-bottom: 0;
-    padding: 62px 53px;
+    padding: 77px 53px 57px;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -276,6 +276,13 @@
 
   .programs__description {
     width: 465px;
-    padding-bottom: 17px;
+    padding-bottom: 14px;
+  }
+
+  .programs__link {
+    &::after {
+      top: 9px;
+      right: -3px;
+    }
   }
 }
