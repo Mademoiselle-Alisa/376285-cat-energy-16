@@ -63,11 +63,17 @@
 @media (min-width: 768px) {
   .show-more {
     background: @white;
-    margin: 0 0 51px;
-    padding: 40px 38px;
-    box-sizing: border-box;
-    border: 1px solid #e6e6e6;
+    padding: 80px 0 0 0;
+    margin: 0;
     text-align: center;
+  }
+
+  .show-more__wrapper {
+    min-height: 429px;
+    padding-top: 0;
+    padding-left: 38px;
+    padding-right: 38px;
+    border: 1px solid #e6e6e6;
   }
 
   .show-more__heading {
@@ -76,11 +82,11 @@
     line-height: 1;
 
     max-width: 150px;
-    margin: 0 auto 28px;
-    padding: 120px 0 0 0;
+    margin: 0 auto 24px;
+    padding: 165px 0 0 0;
 
     &::before {
-      top: 15px;
+      top: 55px;
       right: calc(50% - 30.5px);
       width: 61px;
       height: 61px;
@@ -93,6 +99,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
-    margin: 0 15px 85px;
+    margin: 0 15px 83px;
   }
 }
