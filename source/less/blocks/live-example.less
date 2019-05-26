@@ -166,14 +166,15 @@
 
 @media (min-width: 1300px) {
   .live-example {
-    background-image: linear-gradient(to top, #f2f2f2 78.5%, @white 78.5%);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: linear-gradient(to left, #ebebeb 50%, transparent 50%), linear-gradient(to top, #f2f2f2 78.5%, @white 78.5%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 100%, 0 0;
+    background-size: 150% 78.5%, 100% 100%;
   }
 
   .live-example__wrapper {
     .content-area--desktop;
-    padding: 0 40px 24px;
+    padding: 0 40px 0;
   }
 
   .live-example__heading {
@@ -213,7 +214,13 @@
     width: 650px;
     margin-left: 127px;
     margin-top: -181px;
+    padding-bottom: 24px;
     display: inline-block;
     vertical-align: top;
+
+    background-image: linear-gradient(to left, #ebebeb 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 71.8% ;
   }
 }
