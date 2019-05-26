@@ -1,12 +1,17 @@
 .show-more {
-  margin: 0 0 25px 0;
+  margin: 0 0 28px 0;
+  padding: 0 20px;
+}
+
+.show-more__wrapper {
+  text-align: center;
 }
 
 .show-more__heading {
   color: @black;
 
-  margin: 0 auto 10px;
-  padding: 80px 0 0 0;
+  margin: 0 auto 9px;
+  padding: 79px 0 0 0;
 
   font-size: 16px;
   font-weight: 400;
@@ -24,7 +29,7 @@
     width: 30px;
     height: 30px;
 
-    background: url("../../img/icon-plus-mobile.svg") 0 0 no-repeat;
+    background: url("../img/icon-plus-mobile.svg") 0 0 no-repeat;
     opacity: 0.2;
   }
 }
@@ -57,16 +62,32 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: 768px) {
   .show-more {
     background: @white;
-    margin: 0 0 51px;
-    padding: 40px 38px;
-    box-sizing: border-box;
-    border: 1px solid #e6e6e6;
+    padding: 80px 0 0 0;
+    margin: 0;
     text-align: center;
+  }
+
+  .show-more__wrapper {
+    min-height: 429px;
+    padding-top: 0;
+    padding-left: 38px;
+    padding-right: 38px;
+    border: 1px solid #e6e6e6;
   }
 
   .show-more__heading {
@@ -75,16 +96,16 @@
     line-height: 1;
 
     max-width: 150px;
-    margin: 0 auto 28px;
-    padding: 120px 0 0 0;
+    margin: 0 auto 24px;
+    padding: 165px 0 0 0;
 
     &::before {
-      top: 15px;
+      top: 55px;
       right: calc(50% - 30.5px);
       width: 61px;
       height: 61px;
 
-      background: url("../../img/icon-plus.svg") 0 0 no-repeat;
+      background: url("../img/icon-plus.svg") 0 0 no-repeat;
     }
   }
 
@@ -92,6 +113,26 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
-    margin: 0 15px 85px;
+    margin: 0 15px 83px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .show-more {
+    margin-bottom: 62px;
+    padding: 0;
+  }
+
+  .show-more__wrapper {
+    padding: 0 35px;
+  }
+
+  .show-more__heading {
+    margin: 0 auto 25px;
+    padding: 163px 0 0 0;
+  }
+
+  .show-more__paragraph {
+    margin: 0 0 83px;
   }
 }
