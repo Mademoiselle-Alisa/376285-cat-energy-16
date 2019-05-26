@@ -93,14 +93,19 @@
   padding: 15px;
   vertical-align: middle;
   text-transform: uppercase;
-  border: solid 1px #cdcdcd;
+  border: solid 1px #eaeaea;
   flex-grow: 1;
+  outline: none;
 
   &--email {
     background-image: url("../img/icon-mail.svg");
     background-position: 93% 50%;
     background-repeat: no-repeat;
     background-size: 18px 14px;
+
+    &:focus {
+      background-image: url("../img/icon-mail--green.svg");
+    }
   }
 
   &--phone {
@@ -108,7 +113,31 @@
     background-position: 93% 50%;
     background-repeat: no-repeat;
     background-size: 21px 21px;
+
+    &:focus {
+      background-image: url("../img/icon-phone--green.svg");
+    }
   }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+   &:focus {
+    border: 2px solid @grey-dark;
+  }
+}
+
+.form__input--error {
+  border: solid 2px #ff8282;
+}
+
+.form__input--error.form__input--email {
+   background-image: url("../img/icon-mail--red.svg");
+}
+
+.form__input--error.form__input--phone {
+  background-image: url("../img/icon-phone--red.svg");
 }
 
 .form__label--radio {
@@ -116,7 +145,7 @@
   padding: 10px 0 3px 50px;
 
   &::before {
-    border: 1px solid @grey;
+    border: 1px solid #d3d3d3;
     position: absolute;
     top: 3px;
     left: 4px;
@@ -138,10 +167,24 @@
     content: "";
     border-radius: 50%;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #c2c2c2;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.form__radio {
-  display: none;
+.form__radio:focus + .form__label--radio {
+    outline-width: 5px;
+    outline-style: auto;
+    outline-color: rgba(34, 34, 34, 0.3);
+    outline-offset: -2px;
 }
 
 .form__radio:checked + .form__label--radio::after {
@@ -176,10 +219,24 @@
     border-top: none;
     border-right: none;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #c2c2c2;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.form__checkbox {
-  display: none;
+.form__checkbox:focus + .form__label--checkbox {
+    outline-width: 5px;
+    outline-style: auto;
+    outline-color: rgba(34, 34, 34, 0.3);
+    outline-offset: -2px;
 }
 
 .form__checkbox:checked + .form__label--checkbox::after {
@@ -187,7 +244,7 @@
 }
 
 .form__textarea {
-  border: 1px solid @grey;
+  border: 1px solid #eaeaea;
   color: @grey-dark;
   font-size: 16px;
   font-weight: 400;
@@ -200,6 +257,15 @@
 
   resize: none;
   text-transform: uppercase;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+   &:focus {
+    border: 2px solid @grey-dark;
+  }
 }
 
 .form__submit {

@@ -17,6 +17,7 @@
   a {
     color: @black;
     text-decoration: none;
+    outline: none;
   }
 }
 
@@ -45,21 +46,30 @@
         background-color: #68b738;
       }
     }
+
+    a {
+      &:hover,
+      &focus {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
 @media (min-width: 1300px) {
   .site-list--index {
-    .site-list__item {
-      a {
-        color: @white;
-      }
+    a {
+      color: @white;
+    }
 
-      &--active a {
-        &::after {
-          background-color: @white;
-          bottom: -7px;
-        }
+    &--active a {
+      &::after {
+        background-color: @white;
+        bottom: -7px;
       }
     }
   }

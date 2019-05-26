@@ -11,11 +11,23 @@
   padding: 38px 20px 30px;
 }
 
-.main-footer__logo {
+.main-footer__logo,
+&:visited {
   margin-bottom: 30px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+   opacity: 0.8;
+  }
+
+  &:active {
+   opacity: 0.6;
+  }
 }
 
-.main-footer__copyright-link {
+.main-footer__copyright-link,
+&:visited {
   display: flex;
   flex-direction: row;
 
@@ -27,6 +39,7 @@
   align-items: center;
 
   padding: 19px 0 20px;
+  outline: none;
 
   span {
     color: @grey-dark;
@@ -42,6 +55,21 @@
     position: relative;
     left: 7px;
     fill: #666666;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    svg {
+      fill: #68b738;
+    }
   }
 }
 
