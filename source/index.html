@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="nojs">
     <div style="display: none">
@@ -36,6 +38,10 @@
           <h2 class="promo__heading">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x" width="280" height="270" alt="На фоне желтых кругов разного размера изображена упаковка корма Cat Energy с курицей. На крышке   рыже-белый кот, символ компании. На упаковке подпись 0% natural и граммовка 500гр">
+
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
             <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="На фоне желтых кругов разного размера изображена упаковка корма Cat Energy с курицей. На крышке   рыже-белый кот, символ компании. На упаковке подпись 0% natural и граммовка 500гр">
@@ -103,6 +109,9 @@
           <div class="live-example__slider slider-cat">
             <div class="slider-cat__photo">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x" width="311" height="232" alt="Борис до. На фото изображен очень толстый коричнево-белой раскраски недовольный кот. У него разного   цвета глаза - желтый и зеленый.">
+
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                 <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" id="boris-before-photo" width="311" height="232" alt="Борис до. На фото изображен очень толстый коричнево-белой раскраски недовольный кот. У него разного   цвета глаза - желтый и зеленый.">
               </picture>
