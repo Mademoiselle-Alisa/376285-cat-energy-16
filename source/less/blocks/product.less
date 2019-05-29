@@ -68,6 +68,7 @@
 @media (min-width: 768px) {
   .product__wrapper {
     flex-direction: column;
+    flex-grow: 1;
   }
 
   .product__photo {
@@ -84,6 +85,9 @@
     width: 100%;
     box-sizing: border-box;
     padding: 37px 38px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .product__name {
@@ -102,6 +106,7 @@
 
     width: 100%;
     border-collapse: collapse;
+    margin-top: auto;
 
     th,
     td {
@@ -125,6 +130,10 @@
   .product__photo {
     width: 100%;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 208px;
 
     img {
       width: 245px;
